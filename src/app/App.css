@@ -1,5 +1,138 @@
-body {
-    background-color: steelblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+    --primary: #1289bc;
+    --secondary: #6d15df;
+    --dark: #101011;
+    --alt-font: #f2f2f2;
+    --orange: #f4af76;
+    --white: #fff;
+    --black: #000;
 }
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins";
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.navbar {
+    background: var(--primary);
+    color: var(--alt-font);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar__link {
+    color: var(--alt-font);
+    margin: 10px;
+    display: inline-block;
+}
+
+.navbar__title {
+    color: var(--light);
+}
+
+.page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Smoothie Grid */
+.smoothie__grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.smoothie__card {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--orange);
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+}
+
+.smoothie__rating {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 6px;
+    width: 40px;
+    height: 0;
+    padding: 20px 0;
+    line-height: 0px;
+    text-align: center;
+}
+
+/* Forms */
+form {
+    background-color: var(--white);
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 10px 0 20px 0;
+}
+
+form button {
+    background: var(--primary);
+    color: var(--white);
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-family: "Poppins";
+    cursor: pointer;
+}
+
+/* Update */
+.update__title {
+    color: var(--alt-font);
+}
+
+.smoothie__buttons {
+    text-align: right;
+}
+
+.smoothie__buttons i {
+    color: #bbb;
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding: 6px;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Order By Buttons */
+.order__by button {
+    margin-right: 10px;
+    background: var(--primary);
+    color: var(--white);
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-family: "Poppins";
+    cursor: pointer;
+}
+
 
 
